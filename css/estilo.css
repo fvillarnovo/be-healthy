@@ -1,0 +1,205 @@
+.tituloPrincipal {
+    color: blue;
+    text-align: center;
+}
+
+header {
+    background-color: #666;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.scrollmenu {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+
+#gridArea {
+    display: grid;
+    grid-template-areas:
+        "tituloPrincipal"
+        "navbar navbar-expand-lg bg-light"
+        "behealthy.pic"
+        "video"
+        "parrafo-behealthy"
+        "pieDePagina"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr, 2fr, 2fr, 2fr;
+}
+
+
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+
+
+
+
+
+.parrafo-behealthy{
+    
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    padding: 95px 120px;
+    font-weight: lighter;
+    color: rgb(246, 236, 236);
+    background-color: rgb(0, 0, 255);
+    margin-top: 50px;
+    animation-duration:4s;
+    animation-name: parrafo-behealthy;
+
+  }
+
+  @keyframes parrafo-behealthy {
+    from {
+      background-color: rgb(0, 0, 255);
+    }
+
+    to {
+      background-color: rgba(95, 95, 254, 0.87);
+    }
+  }
+
+
+.pieDePagina {
+    background-color: rgba(173, 235, 250, 0.645);
+    display: flex;
+    margin: 5rem;
+    padding: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.textoFacebook {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+}
+
+.facebookPic {
+    width: 100px;
+    height: 100px;
+
+}
+
+.Facebook {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+
+}
+
+.instagramPic {
+    width: 100px;
+    height: 100px;
+
+}
+
+.textoInstagram {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+}
+
+.instagramImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+
+
+
+}
+
+.textoEmail {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+}
+
+.emailPic {
+    width: 100px;
+    height: 100px;
+
+}
+
+.email {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+
+}
+
+.emailPic {
+    height: 100px;
+    transition: height 2s;
+}
+
+.emailPic:hover {
+    height: 90px;
+}
+
+.instagramPic {
+    height: 100px;
+    transition: height 2s;
+}
+
+.instagramPic:hover {
+    height: 90px;
+}
+
+.facebookPic {
+    height: 100px;
+    transition: height 2s;
+}
+
+.facebookPic:hover {
+    height: 90px;
+}
+
+.profesores{
+    text-align: center;
+    color: blue;
+    font-size: x-large;
+}
+
+.listaProfesores{
+    font-size: larger;
+    background-color: lightslategrey;
+}
+
+.entrenamientos{
+    text-align: center;
+    color: blue;
+    font-size: x-large;
+}
+
+.listaEntrenamientos {
+    font-size: larger;
+    background-color: lightslategrey;
+}
