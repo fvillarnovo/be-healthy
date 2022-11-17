@@ -1,205 +1,135 @@
-.tituloPrincipal {
-    color: blue;
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap"); /*estilos generales*/
+html {
+  font-size: 62.5%;
+}
+html body {
+  background-color: #33FBFF;
+  color: #000202;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
-header {
-    background-color: #666;
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  height: 10rem;
+}
+.encabezado .tituloPrincipal {
+  text-decoration: none;
+  color: #000202;
+  font-size: 3rem;
+}
+.encabezado .tituloPrincipal i {
+  font-size: 4rem;
+  color: #27a776;
+}
+.encabezado .tituloPrincipal h1 {
+  display: inline-block;
+  color: #000202;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.encabezado ul {
+  display: flex;
+  list-style-type: none;
 }
 
-body {
-    background-color: lightblue;
+.introGaleria {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #27a776;
+  margin-bottom: 3rem;
+}
+.introGaleria h2 {
+  color: #000202;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
 }
 
-.scrollmenu {
-    padding: 20px;
-    margin: 20px;
-
+.imagenGaleria {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3 ease;
+  filter: grayscale(50%);
+}
+.imagenGaleria:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
 }
 
-
-#gridArea {
-    display: grid;
-    grid-template-areas:
-        "tituloPrincipal"
-        "navbar navbar-expand-lg bg-light"
-        "behealthy.pic"
-        "video"
-        "parrafo-behealthy"
-        "pieDePagina"
-    ;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr, 2fr, 2fr, 2fr;
+.hero {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  position: relative;
+  display: inline-block;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0.5px;
+}
+.hero h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #27a776;
+  border-radius: 4px;
+  z-index: -1;
+}
+.hero p {
+  color: #000202;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.hero a {
+  /*border: 1px solid $color-botones;*/
+  background-color: #27a776;
+  text-decoration: none;
+  color: #000202;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.hero a:hover {
+  background-color: #2cbc85;
 }
 
-
-
-.video {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-end;
-    margin-top: 20px;
-    padding-top: 20px;
-
-}
-
-
-
-
-
-.parrafo-behealthy{
-    
-    display: flex;
-    text-align: center;
-    font-size: 25px;
-    padding: 95px 120px;
-    font-weight: lighter;
-    color: rgb(246, 236, 236);
-    background-color: rgb(0, 0, 255);
-    margin-top: 50px;
-    animation-duration:4s;
-    animation-name: parrafo-behealthy;
-
+@media (max-width: 767px) {
+  .imagenGaleria {
+    max-width: 90%;
+    margin: auto;
+  }
+  .tituloPrincipal {
+    display: none;
+  }
+  .introGaleria {
+    display: none;
   }
 
-  @keyframes parrafo-behealthy {
-    from {
-      background-color: rgb(0, 0, 255);
-    }
-
-    to {
-      background-color: rgba(95, 95, 254, 0.87);
-    }
+  .pieDePagina {
+    width: 10px;
   }
 
-
-.pieDePagina {
-    background-color: rgba(173, 235, 250, 0.645);
-    display: flex;
-    margin: 5rem;
-    padding: 5rem;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-
+  .emailPic {
+    width: 10px;
+  }
 }
 
-.textoFacebook {
-    color: rgb(7, 7, 7);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-
-
-}
-
-.facebookPic {
-    width: 100px;
-    height: 100px;
-
-}
-
-.Facebook {
-    color: rgb(7, 7, 7);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-
-
-
-}
-
-.instagramPic {
-    width: 100px;
-    height: 100px;
-
-}
-
-.textoInstagram {
-    color: rgb(7, 7, 7);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-
-
-}
-
-.instagramImg {
-    width: 100px;
-    height: 100px;
-    margin-right: 40px;
-
-
-
-}
-
-.textoEmail {
-    color: rgb(7, 7, 7);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-
-
-}
-
-.emailPic {
-    width: 100px;
-    height: 100px;
-
-}
-
-.email {
-    color: rgb(7, 7, 7);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-
-
-
-}
-
-.emailPic {
-    height: 100px;
-    transition: height 2s;
-}
-
-.emailPic:hover {
-    height: 90px;
-}
-
-.instagramPic {
-    height: 100px;
-    transition: height 2s;
-}
-
-.instagramPic:hover {
-    height: 90px;
-}
-
-.facebookPic {
-    height: 100px;
-    transition: height 2s;
-}
-
-.facebookPic:hover {
-    height: 90px;
-}
-
-.profesores{
-    text-align: center;
-    color: blue;
-    font-size: x-large;
-}
-
-.listaProfesores{
-    font-size: larger;
-    background-color: lightslategrey;
-}
-
-.entrenamientos{
-    text-align: center;
-    color: blue;
-    font-size: x-large;
-}
-
-.listaEntrenamientos {
-    font-size: larger;
-    background-color: lightslategrey;
-}
+/*# sourceMappingURL=estilo.css.map */

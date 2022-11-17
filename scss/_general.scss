@@ -1,0 +1,11 @@
+/*estilos generales*/
+
+html {
+    font-size: 62.5%;
+    body {
+        background-color: $color-fondo;
+        color: $color-fuentes;
+        font-family:'Roboto', sans-serif;
+        overflow-x: hidden;
+    }
+}

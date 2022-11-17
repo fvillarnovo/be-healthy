@@ -1,0 +1,32 @@
+.introGaleria {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-botones;
+    margin-bottom: 3rem;
+
+    h2 {
+        color: $color-fuentes;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+
+    }
+}
+
+
+.imagenGaleria {
+    border-radius: 1rem;
+    padding: 0.4rem;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3 ease;
+    filter: grayscale(50%);
+
+
+&:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+}

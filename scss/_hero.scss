@@ -1,0 +1,51 @@
+.hero {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    position: relative;
+    display: inline-block;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 3.8rem;
+        font-weight: 500;
+        span {
+            font-weight: 700;
+            position: relative;
+            padding: 0.5px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 30%;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: $color-botones;
+                border-radius: 4px;
+                z-index: -1;
+
+            }
+        }
+    }
+
+    p {
+        color: $color-fuentes;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    a {
+        /*border: 1px solid $color-botones;*/
+        background-color: $color-botones;
+        @include anclas;
+        text-transform: uppercase;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color-botones-secundario;
+        }
+    }
+    
+    
+}
