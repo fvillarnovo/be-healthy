@@ -1,0 +1,106 @@
+.pieDePagina {
+    background-color: rgba(173, 235, 250, 0.645);
+    display: flex;
+    margin: 5rem;
+    padding: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.textoFacebook {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+}
+
+.facebookPic {
+    width: 100px;
+    height: 100px;
+
+}
+
+.Facebook {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+
+}
+
+.instagramPic {
+    width: 100px;
+    height: 100px;
+
+}
+
+.textoInstagram {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+}
+
+.instagramImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+
+
+
+}
+
+.textoEmail {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+}
+
+.emailPic {
+    width: 100px;
+    height: 100px;
+
+}
+
+.email {
+    color: rgb(7, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+
+
+}
+
+.emailPic {
+    height: 100px;
+    transition: height 2s;
+}
+
+.emailPic:hover {
+    height: 90px;
+}
+
+.instagramPic {
+    height: 100px;
+    transition: height 2s;
+}
+
+.instagramPic:hover {
+    height: 90px;
+}
+
+.facebookPic {
+    height: 100px;
+    transition: height 2s;
+}
+
+.facebookPic:hover {
+    height: 90px;
+}
