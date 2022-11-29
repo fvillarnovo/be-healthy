@@ -9,6 +9,16 @@ html body {
   overflow-x: hidden;
 }
 
+.containerCarrusel {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.carruselInner {
+  width: 60rem;
+}
+
 .encabezado {
   display: flex;
   justify-content: space-between;
@@ -131,9 +141,19 @@ html body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
-.textoFacebook {
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.pieDePagina a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
   color: rgb(7, 7, 7);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: large;
@@ -155,22 +175,10 @@ html body {
   height: 100px;
 }
 
-.textoInstagram {
-  color: rgb(7, 7, 7);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: large;
-}
-
 .instagramImg {
   width: 100px;
   height: 100px;
   margin-right: 40px;
-}
-
-.textoEmail {
-  color: rgb(7, 7, 7);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: large;
 }
 
 .emailPic {
